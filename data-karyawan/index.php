@@ -36,7 +36,7 @@
 
                     include("../koneksi.php");
 
-                    $tampil = "SELECT * FROM events";
+                    $tampil = "SELECT * FROM karyawan";
 
                     $proses = mysqli_query($koneksi,$tampil);
 
@@ -47,9 +47,9 @@
                     <tr>
                         <th scope="row"><?=$nomor++?></th>
                         <td><?=$data['nama']?></td>
-                        <td><?=$data['lokasi']?></td>
+                        <td><?=$data['jabatan']?></td>
                         <td><?=$data['tanggal']?></td>
-                        <td><?=$data['jumlah']?></td>
+                        <td><?=$data['gaji']?></td>
                         <td>
 
                             <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id']?>"><i class="fa-solid fa-pen-to-square"></i></a>
